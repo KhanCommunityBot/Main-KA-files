@@ -1,3 +1,10 @@
+/** Code borrowed from : https://cdn.kastatic.org/genfiles/javascript/en/discussion-package-d55b73.js
+ *  Located between lines 950 and 980
+ *
+ * This code was translated into more manageable and readable code.
+ *
+**/
+
 KAdefine(
     "javascript/discussion-package/low-quality-notice.js",
     function(require, module, exports) {
