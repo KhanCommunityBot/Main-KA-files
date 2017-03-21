@@ -1,3 +1,8 @@
+/** Code borrowed from : https://cdn.kastatic.org/genfiles/javascript/en/discussion-package-d55b73.js
+ *
+ * This code was translated into more manageable and readable code.
+ *
+**/
 KAdefine("third_party/javascript-khansrc/bootstrap-khansrc/js/bootstrap-alert.js", function(__KA_require, __KA_module, __KA_exports) {
     __KA_require("../../../../javascript/node_modules/jquery/index.js");
     ! function($) {
