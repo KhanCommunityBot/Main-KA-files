@@ -1,8 +1,11 @@
-/** Code borrowed from : https://cdn.kastatic.org/genfiles/javascript/en/discussion-package-d55b73.js
+/********************************************************************************************************************
+ *
+ * Code borrowed from : https://cdn.kastatic.org/genfiles/javascript/en/discussion-package-d55b73.js
  *
  * This code was translated into more manageable and readable code.
  *
-**/
+*********************************************************************************************************************/
+
 KAdefine("third_party/javascript-khansrc/bootstrap-khansrc/js/bootstrap-alert.js", function(__KA_require, __KA_module, __KA_exports) {
     __KA_require("../../../../javascript/node_modules/jquery/index.js");
     ! function($) {
@@ -1488,6 +1491,13 @@ KAdefine("javascript/discussion-package/discussion.js", function(require, module
             var s = $(".discussion-content:first", e)
             s.expander("destroy")
             var t = s.html()
+            
+            /***************************************************************************************
+             *
+             * Haha, here's the formatting tools!
+             *
+            ****************************************************************************************/
+            
             t = t.replace(/<em>(.*?)<\/em>/g, function(i, e) {
                 return "_" + e + "_"
             })
@@ -1787,6 +1797,13 @@ KAdefine("javascript/discussion-package/discussion.js", function(require, module
         unhighlight: function se(i, e) {
             i.switchClass(e + "-highlight", "", 400)
         },
+        
+        /******************************************************************************************
+         *
+         * The low-qulaity-score seems to be set here as argument 's'.
+         *
+        *******************************************************************************************/
+        
         _trackAddFeedbackEvent: function te(i, e, s, t, n) {
             Analytics.trackSingleEvent("Added Feedback", {
                 "Feedback Type": i,
@@ -1919,6 +1936,9 @@ KAdefine("javascript/discussion-package/discussion-questions.js", function(requi
             if (!t) {
                 return false
             }
+            
+            // Low quality notice...
+            
             var o = JSON.stringify({
                 text: t,
                 shownLowQualityNotice: DiscussionLowQualityNotice.exists(i),
@@ -2993,6 +3013,19 @@ KAdefine("javascript/discussion-package/discussion-profilepromo.js", function(re
     }
     module.exports = DiscussionProfilePromo
 });
+
+
+
+/***********************************************************************************************
+ *
+ *
+ * This is what we're after, the low-quality-notice.js.
+ *
+ *
+************************************************************************************************/
+
+
+
 KAdefine("javascript/discussion-package/low-quality-notice.js", function(require, module, exports) {
     require("../../third_party/javascript-khansrc/jqueryui/jquery.ui.effect.js")
     var $ = require("jquery")
