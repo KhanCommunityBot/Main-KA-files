@@ -1,73 +1,73 @@
 /********************************************************************************************************************
- *
- * Code borrowed from : https://cdn.kastatic.org/genfiles/javascript/en/discussion-package-d55b73.js
- *
- * This code was translated into more manageable and readable code.
- *
- * 
- * @TABLE OF CONTENTS: They're slightly off because of comments, will fix.
- *
- * Line 6: KAdefine("third_party/javascript-khansrc/bootstrap-khansrc/js/bootstrap-alert.js", function(__KA_require, __KA_module, __KA_exports) {
- * Line 51: KAdefine("third_party/javascript-khansrc/jquery-expander/jquery.expander.js", function(__KA_require, __KA_module, __KA_exports) {
- * Line 287: KAdefine("javascript/old-throbber-package/throbber.js", function(require, module, exports) {
- * Line 312: KAdefine("javascript/discussion-package/discussion-list.js", function(require, module, exports) {
- * Line 616: KAdefine("javascript/discussion-package/discussion-list.handlebars", function(require, module, exports) {
- * Line 863: KAdefine("javascript/discussion-package/discussion-list-profile-widget.handlebars", function(require, module, exports) {
- * Line 1086: KAdefine("javascript/discussion-package/discussion.js", function(require, module, exports) {
- * Line 1888: KAdefine("javascript/discussion-package/discussion-questions.js", function(require, module, exports) {
- * Line 2055: KAdefine("javascript/discussion-package/discussion-answers.js", function(require, module, exports) {
- * Line 2127: KAdefine("javascript/discussion-package/discussion-comments.js", function(require, module, exports) {
- * Line 2246: KAdefine("javascript/discussion-package/discussion-replies.js", function(require, module, exports) {
- * Line 2522: KAdefine("javascript/discussion-package/discussion-voting.js", function(require, module, exports) {
- * Line 2601: KAdefine("javascript/discussion-package/clarifications.js", function(require, module, exports) {
- * Line 2718: KAdefine("javascript/discussion-package/discussion-projectfeedback.js", function(require, module, exports) {
- * Line 2813: KAdefine("javascript/discussion-package/note.handlebars", function(require, module, exports) {
- * Line 2907: KAdefine("javascript/discussion-package/discussion-note.js", function(require, module, exports) {
- * Line 2971: KAdefine("javascript/discussion-package/discussion-profilepromo.js", function(require, module, exports) {
- * Line 2996: KAdefine("javascript/discussion-package/low-quality-notice.js", function(require, module, exports) {
- * Line 3121: KAdefine("javascript/discussion-package/duplicate-notice.js", function(require, module, exports) {
- * Line 3176: KAdefine("javascript/discussion-package/thread.handlebars", function(require, module, exports) {
- * Line 3645: KAdefine("javascript/discussion-package/question.handlebars", function(require, module, exports) {
- * Line 3857: KAdefine("javascript/discussion-package/answer.handlebars", function(require, module, exports) {
- * Line 4299: KAdefine("javascript/discussion-package/comment.handlebars", function(require, module, exports) {
- * Line 4568: KAdefine("javascript/discussion-package/replies-container.handlebars", function(require, module, exports) {
- * Line 4624: KAdefine("javascript/discussion-package/question-form.handlebars", function(require, module, exports) {
- * Line 4815: KAdefine("javascript/discussion-package/question-guidelines.handlebars", function(require, module, exports) {
- * Line 5189: KAdefine("javascript/discussion-package/answer-form.handlebars", function(require, module, exports) {
- * Line 5343: KAdefine("javascript/discussion-package/feedback-guidelines.handlebars", function(require, module, exports) {
- * Line 5672: KAdefine("javascript/discussion-package/comment-form.handlebars", function(require, module, exports) {
- * Line 5799: KAdefine("javascript/discussion-package/reply.handlebars", function(require, module, exports) {
- * Line 6444: KAdefine("javascript/discussion-package/reply-form.handlebars", function(require, module, exports) {
- * Line 6526: KAdefine("javascript/discussion-package/discussion-meta.handlebars", function(require, module, exports) {
- * Line 7807: KAdefine("javascript/discussion-package/vote-controls.handlebars", function(require, module, exports) {
- * Line 7998: KAdefine("javascript/discussion-package/flag-controls.handlebars", function(require, module, exports) {
- * Line 8270: KAdefine("javascript/discussion-package/author-controls.handlebars", function(require, module, exports) {
- * Line 8410: KAdefine("javascript/discussion-package/answer-notification-link.handlebars", function(require, module, exports) {
- * Line 8556: KAdefine("javascript/discussion-package/meta-separator.handlebars", function(require, module, exports) {
- * Line 8570: KAdefine("javascript/discussion-package/low-quality-notice-header.handlebars", function(require, module, exports) {
- * Line 8772: KAdefine("javascript/discussion-package/low-quality-notice-footer.handlebars", function(require, module, exports) {
- * Line 8804: KAdefine("javascript/discussion-package/duplicate-notice.handlebars", function(require, module, exports) {
- * Line 8891: KAdefine("javascript/discussion-package/flag-modal.handlebars", function(require, module, exports) {
- * Line 9556: KAdefine("javascript/discussion-package/scratchpad-flag-modal.handlebars", function(require, module, exports) {
- * Line 9764: KAdefine("javascript/discussion-package/discussion.handlebars", function(require, module, exports) {
- * Line 9844: KAdefine("javascript/discussion-package/video-discussion.handlebars", function(require, module, exports) {
- * Line 10404: KAdefine("javascript/discussion-package/discussion-guidelines.handlebars", function(require, module, exports) {
- * Line 11553: KAdefine("javascript/discussion-package/meta-panel-guidelines.handlebars", function(require, module, exports) {
- * Line 12209: KAdefine("javascript/discussion-package/meta-panel-report-a-mistake.handlebars", function(require, module, exports) {
- * Line 12777: KAdefine("javascript/discussion-package/scratchpad-thumbnail.handlebars", function(require, module, exports) {
- * Line 12837: KAdefine("javascript/discussion-package/guidelines.js", function(require, module, exports) {
- * Line 12859: KAdefine("javascript/discussion-package/report-a-mistake.js", function(require, module, exports) {
- * Line 12881: KAdefine("javascript/discussion-package/project.handlebars", function(require, module, exports) {
- * Line 13046: KAdefine("javascript/discussion-package/sorts.handlebars", function(require, module, exports) {
- * Line 13294: KAdefine("javascript/discussion-package/formatting-tips.handlebars", function(require, module, exports) {
- * Line 13426: KAdefine("javascript/discussion-package/form-controls.handlebars", function(require, module, exports) {
- * Line 13516: KAdefine("javascript/discussion-package/mod-controls.handlebars", function(require, module, exports) {
- * Line 14491: KAdefine("javascript/discussion-package/moderation.js", function(require, module, exports) {
- * Line 14744: KAdefine("javascript/discussion-package/queue.js", function(require, module, exports) {
- * Line 14880: KAdefine("javascript/discussion-package/flag.js", function(require, module, exports) {
- * Line 14971: KAdefine("javascript/discussion-package/flags-hovercard.handlebars", function(require, module, exports) {
- *
- *
+**    Code borrowed from : https://cdn.kastatic.org/genfiles/javascript/en/discussion-package-d55b73.js
+**
+**    This code was translated into more manageable and readable code.
+** 
+**    @TABLE OF CONTENTS: These line locators are subject to change and will not always be up to date.
+**
+**    Note: Any triple stars (***) below indicate the following code is interesting.
+**
+**  Line 73: KAdefine("third_party/javascript-khansrc/bootstrap-khansrc/js/bootstrap-alert.js", function(__KA_require, __KA_module, __KA_exports) {
+**  Line 118: KAdefine("third_party/javascript-khansrc/jquery-expander/jquery.expander.js", function(__KA_require, __KA_module, __KA_exports) {
+**  Line 354: KAdefine("javascript/old-throbber-package/throbber.js", function(require, module, exports) {
+**  Line 379: KAdefine("javascript/discussion-package/discussion-list.js", function(require, module, exports) {
+**  Line 683: KAdefine("javascript/discussion-package/discussion-list.handlebars", function(require, module, exports) {
+**  Line 930: KAdefine("javascript/discussion-package/discussion-list-profile-widget.handlebars", function(require, module, exports) {
+**  Line 1153: KAdefine("javascript/discussion-package/discussion.js", function(require, module, exports) {
+**  Line 1969: KAdefine("javascript/discussion-package/discussion-questions.js", function(require, module, exports) {
+**  Line 2139: KAdefine("javascript/discussion-package/discussion-answers.js", function(require, module, exports) {
+**  Line 2212: KAdefine("javascript/discussion-package/discussion-comments.js", function(require, module, exports) {
+**  Line 2331: KAdefine("javascript/discussion-package/discussion-replies.js", function(require, module, exports) {
+**  Line 2607: KAdefine("javascript/discussion-package/discussion-voting.js", function(require, module, exports) {
+**  Line 2686: KAdefine("javascript/discussion-package/clarifications.js", function(require, module, exports) {
+**  Line 2803: KAdefine("javascript/discussion-package/discussion-projectfeedback.js", function(require, module, exports) {
+**  Line 2898: KAdefine("javascript/discussion-package/note.handlebars", function(require, module, exports) {
+**  Line 2992: KAdefine("javascript/discussion-package/discussion-note.js", function(require, module, exports) {
+**  Line 3056: KAdefine("javascript/discussion-package/discussion-profilepromo.js", function(require, module, exports) {
+**  Line 3094: KAdefine("javascript/discussion-package/low-quality-notice.js", function(require, module, exports) {
+**  Line 3219: KAdefine("javascript/discussion-package/duplicate-notice.js", function(require, module, exports) {
+**  Line 3274: KAdefine("javascript/discussion-package/thread.handlebars", function(require, module, exports) {
+**  Line 3743: KAdefine("javascript/discussion-package/question.handlebars", function(require, module, exports) {
+**  Line 3955: KAdefine("javascript/discussion-package/answer.handlebars", function(require, module, exports) {
+**  Line 4397: KAdefine("javascript/discussion-package/comment.handlebars", function(require, module, exports) {
+**  Line 4666: KAdefine("javascript/discussion-package/replies-container.handlebars", function(require, module, exports) {
+**  Line 4722: KAdefine("javascript/discussion-package/question-form.handlebars", function(require, module, exports) {
+**  Line 4913: KAdefine("javascript/discussion-package/question-guidelines.handlebars", function(require, module, exports) {
+**  Line 5287: KAdefine("javascript/discussion-package/answer-form.handlebars", function(require, module, exports) {
+**  Line 5441: KAdefine("javascript/discussion-package/feedback-guidelines.handlebars", function(require, module, exports) {
+**  Line 5770: KAdefine("javascript/discussion-package/comment-form.handlebars", function(require, module, exports) {
+**  Line 5897: KAdefine("javascript/discussion-package/reply.handlebars", function(require, module, exports) {
+**  Line 6542: KAdefine("javascript/discussion-package/reply-form.handlebars", function(require, module, exports) {
+**  Line 6624: KAdefine("javascript/discussion-package/discussion-meta.handlebars", function(require, module, exports) {
+**  Line 7914: KAdefine("javascript/discussion-package/vote-controls.handlebars", function(require, module, exports) {
+**  Line 8105: KAdefine("javascript/discussion-package/flag-controls.handlebars", function(require, module, exports) {
+**  Line 8377: KAdefine("javascript/discussion-package/author-controls.handlebars", function(require, module, exports) {
+**  Line 8517: KAdefine("javascript/discussion-package/answer-notification-link.handlebars", function(require, module, exports) {
+**  Line 8663: KAdefine("javascript/discussion-package/meta-separator.handlebars", function(require, module, exports) {
+**  Line 8690:  ***  KAdefine("javascript/discussion-package/low-quality-notice-header.handlebars", function(require, module, exports) {
+**  Line 8901:  ***  KAdefine("javascript/discussion-package/low-quality-notice-footer.handlebars", function(require, module, exports) {
+**  Line 9020:  *** KAdefine("javascript/discussion-package/duplicate-notice.handlebars", function(require, module, exports) {
+**  Line 9685: KAdefine("javascript/discussion-package/flag-modal.handlebars", function(require, module, exports) {
+**  Line 9893: KAdefine("javascript/discussion-package/scratchpad-flag-modal.handlebars", function(require, module, exports) {
+**  Line 9973: KAdefine("javascript/discussion-package/discussion.handlebars", function(require, module, exports) {
+**  Line 10533: KAdefine("javascript/discussion-package/video-discussion.handlebars", function(require, module, exports) {
+**  Line 11682: KAdefine("javascript/discussion-package/discussion-guidelines.handlebars", function(require, module, exports) {
+**  Line 12338: KAdefine("javascript/discussion-package/meta-panel-guidelines.handlebars", function(require, module, exports) {
+**  Line 12906: KAdefine("javascript/discussion-package/meta-panel-report-a-mistake.handlebars", function(require, module, exports) {
+**  Line 12966: KAdefine("javascript/discussion-package/scratchpad-thumbnail.handlebars", function(require, module, exports) {
+**  Line 12988: KAdefine("javascript/discussion-package/guidelines.js", function(require, module, exports) {
+**  Line 13010: KAdefine("javascript/discussion-package/report-a-mistake.js", function(require, module, exports) {
+**  Line 13175: KAdefine("javascript/discussion-package/project.handlebars", function(require, module, exports) {
+**  Line 13423: KAdefine("javascript/discussion-package/sorts.handlebars", function(require, module, exports) {
+**  Line 13555: KAdefine("javascript/discussion-package/formatting-tips.handlebars", function(require, module, exports) {
+**  Line 13654: KAdefine("javascript/discussion-package/form-controls.handlebars", function(require, module, exports) {
+**  Line 14642: KAdefine("javascript/discussion-package/mod-controls.handlebars", function(require, module, exports) {
+**  Line 14895:  *** KAdefine("javascript/discussion-package/moderation.js", function(require, module, exports) {
+**  Line 15031: KAdefine("javascript/discussion-package/queue.js", function(require, module, exports) {
+**  Line 15122: KAdefine("javascript/discussion-package/flag.js", function(require, module, exports) {
+**  Line 15278: KAdefine("javascript/discussion-package/flags-hovercard.handlebars", function(require, module, exports) {
+**
+**
 *********************************************************************************************************************/
 
 KAdefine("third_party/javascript-khansrc/bootstrap-khansrc/js/bootstrap-alert.js", function(__KA_require, __KA_module, __KA_exports) {
@@ -6705,7 +6705,16 @@ KAdefine("javascript/discussion-package/discussion-meta.handlebars", function(re
             s += d(r) + '" />\n            '
             return s
         }
-
+        
+        
+        /***********************************************
+         *
+         *
+         * These functions have to do with voting.
+         *
+         *
+        ***********************************************/
+        
         function g(n, e) {
             var s = "",
                 r, o
@@ -8664,6 +8673,19 @@ KAdefine("javascript/discussion-package/meta-separator.handlebars", function(req
     }
     module.exports = wrapped_template
 });
+
+
+
+/************************************************************************************************************************************/
+/***
+ ***   THIS IS THE LOW QUALITY NOTICE HEADER.
+ ***
+ ***   THIS COULD BE USEFUL.
+***/
+/************************************************************************************************************************************/
+
+
+
 KAdefine("javascript/discussion-package/low-quality-notice-header.handlebars", function(require, module, exports) {
     require("../../third_party/javascript-khansrc/handlebars/handlebars.runtime.js");
     var absoluteLinks = require("../shared-package/absolute-links.js")
@@ -8866,6 +8888,15 @@ KAdefine("javascript/discussion-package/low-quality-notice-header.handlebars", f
     }
     module.exports = wrapped_template
 });
+
+
+/************************************************************************************************************************************/
+
+/** Anything having to do with Low Quality, we need to mark. **/
+
+/************************************************************************************************************************************/
+
+
 KAdefine("javascript/discussion-package/low-quality-notice-footer.handlebars", function(require, module, exports) {
     require("../../third_party/javascript-khansrc/handlebars/handlebars.runtime.js");
     var absoluteLinks = require("../shared-package/absolute-links.js")
@@ -13610,6 +13641,15 @@ KAdefine("javascript/discussion-package/form-controls.handlebars", function(requ
     }
     module.exports = wrapped_template
 });
+
+
+/************************************************************************************************************************************/
+/***
+ *** MODERATOR CONTROLS, FOR REFERENCE.
+ ***
+/************************************************************************************************************************************/
+
+
 KAdefine("javascript/discussion-package/mod-controls.handlebars", function(require, module, exports) {
     require("../../third_party/javascript-khansrc/handlebars/handlebars.runtime.js");
     var absoluteLinks = require("../shared-package/absolute-links.js")
@@ -14476,7 +14516,7 @@ KAdefine("javascript/discussion-package/mod-controls.handlebars", function(requi
             r += "</a>\n            "
             return r
         }
-
+        
         function pe(n, e) {
             return "Hide from hotlist"
         }
@@ -14585,6 +14625,19 @@ KAdefine("javascript/discussion-package/mod-controls.handlebars", function(requi
     }
     module.exports = wrapped_template
 });
+
+
+
+/************************************************************************************************************************************/
+/***
+ ***
+ *** MODERATOR FUNCTIONS.
+ ***
+ ***
+/************************************************************************************************************************************/
+
+
+
 KAdefine("javascript/discussion-package/moderation.js", function(require, module, exports) {
     require("../../third_party/javascript-khansrc/qTip2/jquery.qtip.js")
     var $ = require("jquery")
